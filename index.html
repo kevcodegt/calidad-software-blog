@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog académico sobre la importancia de medir la calidad del software y sus principales métricas." />
+  <title>La importancia de medir la Calidad del Software | Kevin Santizo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#inicio">KS <span>Software Quality</span></a>
+  <button class="menu" aria-label="Abrir menú">☰</button>
+  <nav>
+    <a href="#concepto">Concepto</a><a href="#importancia">Importancia</a><a href="#metricas">Métricas</a><a href="#ejemplo">Ejemplo</a><a href="#conclusion">Conclusión</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div>
+    <p class="eyebrow">INGENIERÍA DE SOFTWARE · CALIDAD · MÉTRICAS</p>
+    <h1>La importancia de medir la <span>Calidad del Software</span></h1>
+    <p class="lead">Un software no debería considerarse de calidad únicamente porque “funciona”. Medir permite conocer, con datos, su confiabilidad, disponibilidad, mantenibilidad y capacidad de satisfacer al usuario.</p>
+    <div class="actions"><a class="btn primary" href="#metricas">Explorar métricas</a><a class="btn" href="#ejemplo">Ver ejemplo práctico</a></div>
+  </div>
+  <aside class="hero-card"><div class="pulse">✓</div><strong>Medir → analizar → mejorar</strong><p>Las métricas convierten características que parecen abstractas en información útil para tomar decisiones.</p></aside>
+</section>
+
+<section class="section" id="concepto">
+  <div class="section-title"><span>01</span><div><p>CONCEPTO</p><h2>¿Qué son las métricas de calidad?</h2></div></div>
+  <div class="two-col"><div><p>Son criterios y medidas utilizados para evaluar qué tan bien se desarrolla una solución de software. Permiten comprender aspectos como su <strong>eficiencia, confiabilidad y rendimiento</strong>, y verificar si cumple los estándares y requisitos establecidos.</p><p>Su principal valor es cuantificar características de calidad que, sin medición, podrían evaluarse de forma subjetiva. Diferentes métricas observan diferentes dimensiones: código fuente, interfaz, pruebas, fallos, disponibilidad y experiencia del usuario.</p></div><blockquote>“Lo que no se mide resulta difícil de mejorar de forma objetiva.”<small>Idea central aplicada a la gestión de calidad del software</small></blockquote></div>
+</section>
+
+<section class="section alt" id="importancia">
+  <div class="section-title"><span>02</span><div><p>¿POR QUÉ MEDIR?</p><h2>De opiniones a decisiones basadas en datos</h2></div></div>
+  <div class="cards"><article><b>01</b><h3>Detectar problemas</h3><p>Una tasa elevada de fallas o defectos puede revelar debilidades en pruebas, planificación o control de calidad.</p></article><article><b>02</b><h3>Prevenir fallas</h3><p>Medir durante el desarrollo ayuda a identificar defectos antes de que lleguen a los usuarios finales.</p></article><article><b>03</b><h3>Mejorar procesos</h3><p>MTTD, MTTR y otras métricas permiten analizar la capacidad del equipo para detectar y resolver incidentes.</p></article><article><b>04</b><h3>Conocer al usuario</h3><p>La satisfacción del cliente complementa las métricas técnicas con la percepción real de quienes utilizan el producto.</p></article></div>
+</section>
+
+<section class="section" id="metricas">
+  <div class="section-title"><span>03</span><div><p>MEDICIÓN</p><h2>10 métricas de calidad que debemos conocer</h2></div></div>
+  <div class="metrics">
+    <article><i>01</i><h3>Rotación total de código</h3><p>Líneas agregadas, modificadas o eliminadas durante un período. Una rotación elevada puede relacionarse con inestabilidad o necesidad de refactorización.</p></article>
+    <article><i>02</i><h3>Tasa de fallas</h3><p>Frecuencia con la que falla el software durante su ejecución. Una tasa alta obliga a investigar la causa raíz.</p></article>
+    <article><i>03</i><h3>Disponibilidad</h3><p>Compara el tiempo que el sistema permanece activo con su tiempo de inactividad.</p><code>Disponibilidad = Ta / (Ta + Ti) × 100</code></article>
+    <article><i>04</i><h3>Densidad de defectos</h3><p>Relaciona la cantidad de defectos encontrados con el tamaño del código, normalmente por cada 1,000 líneas.</p></article>
+    <article><i>05</i><h3>MTTD</h3><p><strong>Mean Time To Detect.</strong> Tiempo promedio que tarda el equipo en detectar errores.</p><code>MTTD = tiempo total de detección / errores</code></article>
+    <article><i>06</i><h3>MTBF</h3><p><strong>Mean Time Between Failures.</strong> Tiempo promedio de funcionamiento entre dos fallas.</p><code>MTBF = horas de ejecución / fallas</code></article>
+    <article><i>07</i><h3>MTTR</h3><p><strong>Mean Time To Repair/Resolve.</strong> Tiempo promedio desde que se detecta un problema hasta su resolución.</p></article>
+    <article><i>08</i><h3>CSAT</h3><p>Mide la satisfacción de los clientes a partir de encuestas sobre su experiencia con el producto.</p></article>
+    <article><i>09</i><h3>Remediación de vulnerabilidades</h3><p>Tiempo promedio necesario para corregir vulnerabilidades de ciberseguridad detectadas.</p></article>
+    <article><i>10</i><h3>Cobertura de código</h3><p>Porcentaje del código fuente cubierto por pruebas unitarias.</p><code>Cobertura = Lp / Lt × 100</code></article>
+  </div>
+</section>
+
+<section class="section example" id="ejemplo">
+  <div class="section-title"><span>04</span><div><p>CASO PRÁCTICO</p><h2>¿Cómo se ve la calidad cuando la medimos?</h2></div></div>
+  <p>Supongamos que un equipo mantiene un sistema de ventas. Durante un período registra los siguientes datos. En lugar de afirmar simplemente que “el sistema funciona bien”, puede cuantificar su comportamiento.</p>
+  <div class="dashboard">
+    <div><small>Disponibilidad</small><strong>90%</strong><p>9 horas activo de cada 10</p></div>
+    <div><small>Densidad</small><strong>0.5</strong><p>defectos / 1,000 líneas</p></div>
+    <div><small>MTTD</small><strong>50 min</strong><p>1,000 min / 20 errores</p></div>
+    <div><small>MTBF</small><strong>200 h</strong><p>3,000 h / 15 fallas</p></div>
+    <div><small>MTTR</small><strong>30 min</strong><p>2,880 min / 96 reparaciones</p></div>
+    <div><small>Cobertura</small><strong>95%</strong><p>9,500 / 10,000 líneas</p></div>
+  </div>
+  <div class="insight"><strong>¿Qué aporta la medición?</strong><p>Estos datos permiten establecer una línea base, observar tendencias y decidir dónde concentrar los esfuerzos. Si el MTTR aumenta, por ejemplo, el equipo puede revisar su documentación, diagnóstico y estructura del código; si crece la tasa de fallas, puede analizar su proceso de pruebas y control de calidad.</p></div>
+</section>
+
+<section class="section alt">
+  <div class="section-title"><span>05</span><div><p>INTERPRETACIÓN</p><h2>Una métrica aislada no cuenta toda la historia</h2></div></div>
+  <div class="two-col"><div><p>Medir no significa perseguir números sin contexto. La rotación de código, por ejemplo, no mide por sí sola la calidad: muchos cambios pueden corresponder a una etapa temprana de desarrollo o también indicar una arquitectura que necesita refactorización.</p><p>Por eso es más útil analizar varias métricas en conjunto y observar su evolución. Calidad implica tanto el producto como el proceso utilizado para construirlo y mantenerlo.</p></div><div class="checklist"><p>✓ Definir qué queremos conocer.</p><p>✓ Seleccionar métricas relevantes.</p><p>✓ Medir de manera periódica.</p><p>✓ Comparar resultados y tendencias.</p><p>✓ Investigar causas, no solo síntomas.</p><p>✓ Aplicar mejoras y volver a medir.</p></div></div>
+</section>
+
+<section class="section" id="conclusion">
+  <div class="section-title"><span>06</span><div><p>CONCLUSIÓN</p><h2>La calidad debe demostrarse, no suponerse</h2></div></div>
+  <div class="conclusion"><p>Medir la calidad del software proporciona evidencia para comprender cómo se comporta un producto y cómo trabaja el equipo que lo desarrolla. Métricas como disponibilidad, densidad de defectos, MTTD, MTBF, MTTR, CSAT, vulnerabilidades y cobertura permiten identificar riesgos y oportunidades de mejora.</p><p>La medición continua también favorece un ciclo de mejora: <strong>medir, analizar, corregir y volver a medir</strong>. El objetivo final no es obtener números perfectos, sino desarrollar software más confiable, mantenible y útil para las personas que dependen de él.</p></div>
+</section>
+
+<section class="section references">
+  <div class="section-title"><span>07</span><div><p>FUENTE</p><h2>Material consultado</h2></div></div>
+  <p><strong>Material académico proporcionado:</strong> <em>La importancia de medir la Calidad del Software</em>. Documento de 12 páginas utilizado como base para los conceptos, las diez métricas y los ejemplos numéricos presentados en este blog.</p>
+</section>
+</main>
+<footer><div><strong>La importancia de medir la Calidad del Software</strong><p>Blog académico · 2026</p></div><div class="author">Autor<br><strong>Kevin Santizo</strong></div></footer>
+<script src="script.js"></script>
+</body></html>
